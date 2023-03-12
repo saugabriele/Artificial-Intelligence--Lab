@@ -177,33 +177,3 @@ acc_test_pixels = accuracy_score(y_test, p_test_pixels)
 
 print("Accuracy test with only three features: ", acc_test)
 print("Accuracy test with one feature for each pixel: ", acc_test_pixels)
-
-
-print(X_test_features[1103])
-
-arr = X_test[1103].reshape((28, 28))
-
-fig = plt.figure()
-fig.add_subplot(111)
-plt.imshow(arr, cmap="Greys")
-
-print("The correct label is: ", y_test[1103])
-
-print("The label assigned is: ", p_test[1103])
-
-plt.show()
-
-
-print(X_test_features[1102])
-
-arr = X_test[1102].reshape((28, 28))
-
-fig = plt.figure()
-fig.add_subplot(111)
-plt.imshow(arr, cmap="Greys")
-
-print("The correct label is: ", y_test[1102])
-
-print("The label assigned is: ", p_test[1102])
-
-plt.show()
